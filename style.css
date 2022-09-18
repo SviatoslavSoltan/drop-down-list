@@ -1,0 +1,87 @@
+body{
+    background: aquamarine;
+    font-family: 'Lato', sans-serif;
+}
+
+header{
+    width: 100%;
+    box-sizing: border-box;
+    background: rgb(56, 56, 56);
+    border-bottom: 5px solid rgb(96, 68, 255);
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.menu_item>a{
+    display: block;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.sub_menu{
+    display: none;
+}
+
+.product_menu{
+    display: none;
+}
+
+.sub_menu a{
+    display: block;
+    box-sizing: border-box;
+    padding: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.sub_menu i{
+    float: right;
+}
+
+.sub_menu_item{
+    position: relative;
+}
+
+
+.menu_item:hover{
+    background:  rgb(96, 68, 255);
+}
+
+.menu_item:hover .sub_menu{
+    width: 100%;
+    max-width: 280px;
+    display: block;
+    position: absolute;
+    background:  rgb(96, 68, 255);
+    border-radius: 5px;
+}
+
+
+.sub_menu_item:hover>a{
+    color: rgb(56, 56, 56);
+    transition: .5s;
+}
+
+.sub_menu_item:hover .product_menu{
+    width: 100%;
+    max-width: 280px;
+    display: block;
+    position: absolute;
+    background:  rgb(96, 68, 255);
+    top: 0;
+    left: 100%;
+    border-radius: 5px;
+}
+
+
+.product_menu_item:hover a{
+    color: rgb(56, 56, 56);
+    transition: .5s;
+}
